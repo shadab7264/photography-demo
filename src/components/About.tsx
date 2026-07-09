@@ -39,7 +39,7 @@ export default function About() {
                 initial={{ scale: 1.15 }}
                 animate={isInView ? { scale: 1 } : {}}
                 transition={{ duration: 1.4, ease: [0.76, 0, 0.24, 1] }}
-                src="/abhinav-portrait.jpg"
+                src={`${import.meta.env.BASE_URL}abhinav-portrait.jpg`}
                 alt="Abhinav Soni"
                 className="w-full h-full object-cover"
               />

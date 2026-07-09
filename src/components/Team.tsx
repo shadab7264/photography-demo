@@ -26,7 +26,7 @@ export default function Team() {
           >
             <div className="relative overflow-hidden aspect-[3/4] mb-6">
               <img
-                src={member.image}
+                src={`${import.meta.env.BASE_URL}${member.image.replace(/^\//, '')}`}
                 alt={member.name}
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-[900ms] ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:scale-[1.04]"
               />
